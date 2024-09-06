@@ -1,0 +1,36 @@
+.screens__img {
+    max-width: 100%;
+}
+
+.screens__content {
+    padding: 24px;
+    margin-top: 32px;
+    border: 1px solid $gray;
+    border-radius: 32px;
+}
+
+.screens__title {
+    @include font(500, 24px, 1.16, $white);
+}
+
+.screens-br__tablet {
+    display: none;
+}
+
+.screens__button {
+    display: flex;
+    justify-content: right;
+    margin-top: 32px;
+}
+
+@media screen and (max-width: $tablet) {
+    .screens-br__tablet {
+        display: block;
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    .screens-br__tablet:first-child {
+        display: none;
+    }
+}

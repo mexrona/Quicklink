@@ -1,0 +1,43 @@
+.nav {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+
+    &.no-hidden {
+        display: flex;
+    }
+}
+
+.nav__link {
+    @include font(500, 20px, 1.366, $white);
+    transition: color 0.1s linear;
+
+    &:hover,
+    &.active {
+        color: $yellow;
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    .nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 142px 24px 18px;
+        background-color: $gray;
+        border-bottom-right-radius: 32px;
+        border-bottom-left-radius: 32px;
+        position: absolute;
+        top: 58px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .nav__link {
+        width: 100%;
+        padding: 24px;
+        font-size: 24px;
+        line-height: 1.16;
+        border-top: 1px solid $gray-one;
+    }
+}

@@ -1,0 +1,42 @@
+.footer {
+    display: flex;
+    align-items: start;
+    gap: 0 24px;
+    padding: 60px 0;
+}
+
+.footer__column {
+    width: 25%;
+}
+
+.footer__link {
+    display: block;
+    margin-top: 20px;
+    @include font(500, 20px, 1.366, $white);
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    .footer {
+        flex-wrap: wrap;
+        gap: 24px 0;
+    }
+
+    .footer__column {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    .footer__column {
+        width: 100%;
+    }
+}

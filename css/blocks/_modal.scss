@@ -1,0 +1,18 @@
+.modal {
+    @include mask($violet);
+    padding: 64px 20px;
+    z-index: 1001;
+
+    &.show {
+        display: flex;
+    }
+}
+
+.modal__dialog {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+    transform: scale(0);
+    transition: transform 0.2s linear;
+}

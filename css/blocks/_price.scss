@@ -1,0 +1,95 @@
+.price__inner {
+    display: flex;
+    align-items: center;
+    gap: 0 32px;
+    margin-top: 32px;
+}
+
+.price__item {
+    width: 50%;
+    height: 448px;
+    padding: 32px;
+    background-color: $yellow;
+    border-radius: 32px;
+    position: relative;
+}
+
+.price__category {
+    @include font(600, 24px, 1.083, $black);
+}
+
+.price__price {
+    margin-top: 18px;
+    @include font(400, 24px, 1.3685, $black);
+}
+
+.price__number {
+    @include font(800, 68px, 1.1, $black);
+}
+
+.price__word {
+    margin-left: -6px;
+}
+
+.price__list {
+    margin-top: 18px;
+    @include font(400, 17px, 1.4, $black);
+}
+
+.price-list__inner {
+    margin-top: 18px;
+}
+
+.price__text {
+    margin-top: 8px;
+    font-weight: 600;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &::before {
+        content: url("../../img/icons/black-check.png");
+        padding: 7px 4.5px;
+    }
+}
+
+.price__tag {
+    width: 100%;
+    max-width: 144px;
+    padding: 14px;
+    @include font(500, 16px, 1.366, $white);
+    background-color: $black;
+    border: 1px solid $gray;
+    border-radius: 18px;
+    position: absolute;
+    top: -25px;
+    right: 32px;
+}
+
+@media screen and (max-width: $tablet) {
+    .price__item {
+        height: 496px;
+    }
+
+    .price-list__inner {
+        &--2 {
+            margin-top: 43px;
+        }
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    .price__inner {
+        flex-wrap: wrap;
+        gap: 32px 0;
+    }
+
+    .price__item {
+        width: 100%;
+    }
+
+    .price__item:first-child {
+        height: 464px;
+    }
+}

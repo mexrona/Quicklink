@@ -1,0 +1,141 @@
+.feedback {
+    display: flex;
+    justify-content: right;
+    padding-bottom: 64px;
+    margin-top: 100px;
+}
+
+.feedback__button {
+    width: 56px;
+    height: 56px;
+    background-color: $yellow;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.1s linear;
+
+    &:hover {
+        background-color: $white;
+    }
+}
+
+.feedback__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.feedback__inner {
+    padding: 32px;
+    border: 1px solid $yellow;
+    border-radius: 32px;
+}
+
+.feedback__preview {
+    padding: 20px 0;
+}
+
+.feedback__content {
+    width: 100%;
+    max-width: 456px;
+}
+
+.feedback__title {
+    margin-top: 24px;
+    @include font(700, 42px, 1.28, $white);
+}
+
+.feedback__text {
+    margin-top: 18px;
+    @include font(500, 18px, 1.44, $white);
+}
+
+.feedback__form {
+    margin-top: 24px;
+}
+
+.feedback-form__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+}
+
+.feedback-select__inner {
+    min-width: 100%;
+    min-height: 60px;
+    position: relative;
+}
+
+.feedback-select__text {
+    cursor: default;
+}
+
+.feedback-select__icon {
+    padding: 8px 4px;
+    cursor: pointer;
+    position: absolute;
+    top: 18px;
+    right: 14px;
+
+    &.active {
+        transform: rotate(180deg);
+    }
+}
+
+.feedback__options {
+    &.active {
+        margin-top: 24px;
+    }
+
+    &.active .feedback__option {
+        display: block;
+    }
+}
+
+.feedback__option {
+    display: none;
+    padding-top: 8px;
+    margin-top: 16px;
+    border-top: 1px solid $white-one;
+    cursor: pointer;
+    transition: color 0.1s linear;
+
+    &:first-child {
+        padding-top: 0;
+        margin-top: 0;
+        border-top: none;
+    }
+
+    &:hover {
+        color: $blue;
+    }
+
+    &.active {
+        display: block;
+        width: calc(100% - 54px);
+        padding-top: 0;
+        margin-top: 0;
+        background-color: $white;
+        border-top: none;
+        cursor: default;
+        position: absolute;
+        top: 18px;
+        left: 14px;
+
+        &:hover {
+            color: $gray-one;
+        }
+    }
+}
+
+.feedback-button__text {
+    width: 100%;
+}
+
+.feedback-button__icon {
+    width: 24px;
+    height: 24px;
+    fill: $white;
+    transition: fill 0.1s linear;
+}

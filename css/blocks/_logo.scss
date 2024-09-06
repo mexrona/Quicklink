@@ -1,0 +1,23 @@
+.logo {
+    display: flex;
+    align-items: center;
+    cursor: default;
+
+    &--header {
+        column-gap: 4px;
+        padding: 8px 16px;
+        background-color: $yellow;
+        @include font(800, 24px, 1, $black);
+        border-radius: 16px;
+
+        &.hidden {
+            display: none;
+        }
+    }
+
+    &--footer {
+        column-gap: 6.5px;
+        padding: 4px 8px;
+        @include font(800, 24px, 1.3658, $white);
+    }
+}

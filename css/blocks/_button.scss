@@ -1,0 +1,123 @@
+.button {
+    display: block;
+    padding: 18px 14px;
+    @include font(600, 18px, 1.366, $white);
+    border-radius: 18px;
+    cursor: pointer;
+    transition: color 0.1s linear, background-color 0.1s linear;
+
+    &--input,
+    &--screens,
+    &--price {
+        width: 100%;
+    }
+
+    &--input {
+        color: $black;
+        cursor: text;
+    }
+
+    &--input::placeholder {
+        @include font(600, 18px, 1.366, $gray-one);
+    }
+
+    &--input:focus {
+        outline: 2px solid $blue;
+    }
+
+    &--intro,
+    &--feedback {
+        display: flex;
+        align-items: center;
+    }
+
+    &--intro {
+        column-gap: 12px;
+        color: $black;
+        background-color: $yellow;
+
+        &:hover {
+            background-color: $white;
+        }
+    }
+
+    &--screens {
+        max-width: 247px;
+        border: 1px solid $gray;
+        border-radius: 18px;
+    }
+
+    &--price {
+        max-width: 200px;
+        margin-top: 24px;
+        text-align: center;
+        background-color: $black;
+        position: absolute;
+        bottom: 32px;
+        left: 32px;
+    }
+
+    &--screens:hover,
+    &--price:hover {
+        color: $black;
+        background-color: $white;
+    }
+
+    &--feedback {
+        column-gap: 8px;
+        width: 100%;
+        text-align: center;
+        background-color: $violet;
+        border: 1px solid $gray;
+
+        &:hover {
+            color: $black;
+            background-color: $yellow;
+        }
+
+        &:hover .feedback-button__icon {
+            fill: $black;
+        }
+    }
+
+    &--feedback-form {
+        max-width: 180px;
+        margin-top: 24px;
+    }
+
+    &--feedback-send {
+        max-width: 260px;
+        margin-top: 32px;
+    }
+
+    &--textarea {
+        height: 111px;
+    }
+
+    &--select {
+        width: 100%;
+        padding-right: 30px;
+        color: $gray-one;
+        background-color: $white;
+        cursor: default;
+        position: absolute;
+        z-index: 1;
+
+        &::after {
+            content: "";
+            display: none;
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            border: 2px solid $blue;
+            border-radius: 18px;
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            z-index: -1;
+        }
+
+        &.focus::after {
+            display: block;
+        }
+    }
+}

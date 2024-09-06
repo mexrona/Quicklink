@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="img/favicons/apple-touch-icon.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="img/favicons/favicon-32x32.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="img/favicons/favicon-16x16.png" />
+        <link rel="manifest" href="img/favicons/site.webmanifest" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>QUICKLINK</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <svg style="display: none">
+            <symbol id="white-check" viewBox="0 0 16 11">
+                <path
+                    d="M14.71 0.709983C14.617 0.616254 14.5064 0.54186 14.3846 0.491091C14.2627 0.440323 14.132 0.414185 14 0.414185C13.868 0.414185 13.7373 0.440323 13.6154 0.491091C13.4936 0.54186 13.383 0.616254 13.29 0.709983L5.84001 8.16998L2.71001 5.02998C2.61349 4.93674 2.49955 4.86343 2.37469 4.81423C2.24984 4.76502 2.11651 4.74089 1.98233 4.74321C1.84815 4.74553 1.71574 4.77426 1.59266 4.82776C1.46959 4.88125 1.35825 4.95846 1.26501 5.05498C1.17177 5.1515 1.09846 5.26545 1.04925 5.3903C1.00005 5.51516 0.97592 5.64848 0.978241 5.78266C0.980563 5.91684 1.00929 6.04925 1.06278 6.17233C1.11628 6.29541 1.19349 6.40674 1.29001 6.49998L5.13001 10.34C5.22297 10.4337 5.33357 10.5081 5.45543 10.5589C5.57729 10.6096 5.708 10.6358 5.84001 10.6358C5.97202 10.6358 6.10273 10.6096 6.22459 10.5589C6.34645 10.5081 6.45705 10.4337 6.55001 10.34L14.71 2.17998C14.8115 2.08634 14.8925 1.97269 14.9479 1.84619C15.0033 1.71969 15.0319 1.58308 15.0319 1.44498C15.0319 1.30688 15.0033 1.17028 14.9479 1.04378C14.8925 0.917277 14.8115 0.803625 14.71 0.709983Z" />
+            </symbol>
+        </svg>
+        <header id="header" class="header">
+            <div class="container container--header">
+                <div id="headerInner" class="header__inner">
+                    <div class="header__menu">
+                        <a
+                            id="logoHeader"
+                            class="logo logo--header"
+                            href="#intro">
+                            <img
+                                class="header__icon"
+                                src="img/icons/black-logo.png"
+                                alt="Logo" />
+                            QUICKLINK
+                        </a>
+                        <nav id="nav" class="nav">
+                            <a class="nav__link" href="#intro">Что это?</a>
+                            <a class="nav__link" href="#screens"
+                                >Как это выглядит?</a
+                            >
+                            <a class="nav__link" href="#price"
+                                >Сколько стоит?</a
+                            >
+                            <a class="nav__link" href="#faq">FAQ</a>
+                        </nav>
+                    </div>
+                    <div id="login" class="header__login">
+                        <img
+                            class="header__icon"
+                            src="img/icons/login.png"
+                            alt="Login" />
+                    </div>
+                    <div id="burger" class="burger">
+                        <div class="burger__item"></div>
+                    </div>
+                    <div id="loginText" class="header-login__text">Вход</div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="intro" class="container container--intro">
+                <div class="intro">
+                    <div class="intro__inner">
+                        <div class="intro__content">
+                            <h1 class="intro__title">
+                                Все, что тебе <br />
+                                нужно <br />
+                                В одной ссылке
+                                <img
+                                    class="intro__img intro__img--1"
+                                    src="img/intro/1.png"
+                                    alt="Element-1" />
+                                <img
+                                    class="intro__img intro__img--2"
+                                    src="img/intro/2.png"
+                                    alt="Element-2" />
+                            </h1>
+                            <p class="intro__text">
+                                Присоединяйся к более 50 млн. людей <br />
+                                и делись всем, что ты создаешь, курируешь <br />
+                                или продаешь онлайн. Все в одной ссылке.
+                            </p>
+                        </div>
+                        <div class="intro__preview">
+                            <img
+                                class="intro__img intro__img--3"
+                                src="img/intro/3.png"
+                                alt="Element-3" />
+                            <img
+                                class="intro__img intro__img--preview"
+                                src="img/intro/preview.png"
+                                alt="Preview" />
+                        </div>
+                    </div>
+                    <form action="/" method="get">
+                        <div class="intro__form">
+                            <label class="intro__label">
+                                <input
+                                    class="button button--input"
+                                    name="email"
+                                    type="email"
+                                    placeholder="your@mail.com" />
+                            </label>
+                            <button class="button button--intro" type="submit">
+                                Создать страницу
+                                <img
+                                    class="button__icon"
+                                    src="img/icons/right-arrow.png"
+                                    alt="Arrow" />
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="container">
+                <div class="features">
+                    <div class="features__card features__card--1">
+                        <div class="features__preview">
+                            <img
+                                class="features__img"
+                                src="img/features/1.png"
+                                alt="Img" />
+                        </div>
+                        <h2 class="features__title">Кастомные элементы</h2>
+                        <p class="features__text">
+                            Создавай и кастомизируй свой профиль за считанные
+                            минуты!
+                        </p>
+                    </div>
+                    <div class="features__card features__card--2">
+                        <div
+                            class="features__preview features__preview--center">
+                            <img
+                                class="features__img"
+                                src="img/features/2.png"
+                                alt="Img" />
+                        </div>
+                        <h2 class="features__title">Подробная аналитика</h2>
+                        <p class="features__text">
+                            Отслеживай информацию о том, кто и откуда
+                            интересовался твоим профилем
+                        </p>
+                    </div>
+                    <div class="features__card features__card--3">
+                        <div class="features__preview features__preview--right">
+                            <img
+                                class="features__img"
+                                src="img/features/3.png"
+                                alt="Img" />
+                        </div>
+                        <h2 class="features__title features__title--3">
+                            Короткая ссылка
+                        </h2>
+                        <p class="features__text features__text--3">
+                            Красивая персональная ссылка на профиль бесплатно!
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="screens" class="container">
+                <div class="screens">
+                    <img
+                        class="screens__img"
+                        src="img/screens.png"
+                        alt="Screens" />
+                    <div class="screens__content">
+                        <h2 class="screens__title">
+                            Большое количество кастомизируемых элементов
+                            <br class="screens-br__tablet" />
+                            поможет лучше рассказать
+                            <br class="screens-br__tablet" />
+                            миру о себе и привлечь новых клиентов
+                        </h2>
+                        <div class="screens__button">
+                            <a class="button button--screens" href="#"
+                                >Попробовать бесплатно</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="price" class="container">
+                <div class="price">
+                    <h3 class="title">тарифы</h3>
+                    <div class="price__inner">
+                        <div class="price__item">
+                            <h3 class="price__category">базовый</h3>
+                            <h2 class="price__price">
+                                <span class="price__number">0&#8381;</span>
+                                <span class="price__word">/мес</span>
+                            </h2>
+                            <div class="price__list">
+                                Для тех, кто хочет попробовать сервис
+                                <ul class="price-list__inner">
+                                    <li class="price__text">
+                                        Нет платы за использование
+                                    </li>
+                                    <li class="price__text">
+                                        Бесплатный домен
+                                    </li>
+                                    <li class="price__text">
+                                        Несколько тем оформления на выбор
+                                    </li>
+                                </ul>
+                            </div>
+                            <a class="button button--price" href="#"
+                                >Попробовать</a
+                            >
+                        </div>
+                        <div class="price__item">
+                            <h3 class="price__category">премиум</h3>
+                            <h2 class="price__price">
+                                <span class="price__number">250&#8381;</span>
+                                <span class="price__word">/мес</span>
+                            </h2>
+                            <div class="price__list">
+                                Для продвинутых пользователей
+                                <ul
+                                    class="price-list__inner price-list__inner--2">
+                                    <li class="price__text">
+                                        Более 100 кастомных элементов
+                                    </li>
+                                    <li class="price__text">
+                                        Доступ к аналитике
+                                    </li>
+                                    <li class="price__text">
+                                        Скидки на продвижение
+                                    </li>
+                                    <li class="price__text">
+                                        Бесплатное хранилище фото
+                                    </li>
+                                </ul>
+                            </div>
+                            <a class="button button--price" href="#"
+                                >Получить премиум</a
+                            >
+                            <div class="price__tag">Лучший выбор</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="faq" class="container">
+                <div class="faq">
+                    <h3 class="title">FAQ</h3>
+                    <div class="faq__inner">
+                        <div class="faq__item">
+                            <div class="faq__title">
+                                <span class="faq__name"
+                                    >Зачем мне нужен Quicklink?</span
+                                >
+                                <span class="faq__icon"></span>
+                            </div>
+                            <div class="faq__text">
+                                <p>
+                                    Это единая ссылка, которую вы можете
+                                    использовать, чтобы связать вашу аудиторию
+                                    со всем, что вы делаете, и со всем, что вам
+                                    небезразлично. Это позволяет делиться
+                                    множеством ссылок в одной, чтобы ваши
+                                    подписчики, посетители и клиенты могли найти
+                                    все, что они ищут, в одном месте.
+                                </p>
+                                <br />
+                                <p>
+                                    Вы можете добавить ссылку на Quicklink на
+                                    платформах социальных сетей, таких как
+                                    Tiktok и Instagram, включить в подписи к
+                                    электронной почте и даже отобразить в виде
+                                    QR-кода, чтобы ваша офлайн-аудитория
+                                    связалась с вами онлайн.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <div class="faq__title">
+                                <span class="faq__name"
+                                    >Как я могу использовать свой профиль?</span
+                                >
+                                <span class="faq__icon"></span>
+                            </div>
+                            <div class="faq__text">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Quod quaerat, explicabo ut
+                                    maxime nobis in praesentium deserunt a
+                                    tempore temporibus id dignissimos dolores
+                                    commodi quidem? Maiores voluptatem porro
+                                    laudantium perspiciatis.
+                                </p>
+                                <br />
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Placeat minima recusandae
+                                    ut facere. Accusamus sapiente harum
+                                    voluptatem recusandae molestiae, quibusdam
+                                    dolor quam nostrum consectetur et, voluptate
+                                    dolores minima quas voluptatum?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <div class="faq__title">
+                                <span class="faq__name"
+                                    >Как много ссылок на профиль я могу
+                                    создать?</span
+                                >
+                                <span class="faq__icon"></span>
+                            </div>
+                            <div class="faq__text">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Quod quaerat, explicabo ut
+                                    maxime nobis in praesentium deserunt a
+                                    tempore temporibus id dignissimos dolores
+                                    commodi quidem? Maiores voluptatem porro
+                                    laudantium perspiciatis.
+                                </p>
+                                <br />
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Placeat minima recusandae
+                                    ut facere. Accusamus sapiente harum
+                                    voluptatem recusandae molestiae, quibusdam
+                                    dolor quam nostrum consectetur et, voluptate
+                                    dolores minima quas voluptatum?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <div class="faq__title">
+                                <span class="faq__name"
+                                    >Что дает премиум подписка?</span
+                                >
+                                <span class="faq__icon"></span>
+                            </div>
+                            <div class="faq__text">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Quod quaerat, explicabo ut
+                                    maxime nobis in praesentium deserunt a
+                                    tempore temporibus id dignissimos dolores
+                                    commodi quidem? Maiores voluptatem porro
+                                    laudantium perspiciatis.
+                                </p>
+                                <br />
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Placeat minima recusandae
+                                    ut facere. Accusamus sapiente harum
+                                    voluptatem recusandae molestiae, quibusdam
+                                    dolor quam nostrum consectetur et, voluptate
+                                    dolores minima quas voluptatum?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <div class="faq__title">
+                                <span class="faq__name"
+                                    >Какие ограничения есть на базовом
+                                    тарифе?</span
+                                >
+                                <span class="faq__icon"></span>
+                            </div>
+                            <div class="faq__text">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Quod quaerat, explicabo ut
+                                    maxime nobis in praesentium deserunt a
+                                    tempore temporibus id dignissimos dolores
+                                    commodi quidem? Maiores voluptatem porro
+                                    laudantium perspiciatis.
+                                </p>
+                                <br />
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Placeat minima recusandae
+                                    ut facere. Accusamus sapiente harum
+                                    voluptatem recusandae molestiae, quibusdam
+                                    dolor quam nostrum consectetur et, voluptate
+                                    dolores minima quas voluptatum?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="container">
+            <div class="footer">
+                <div class="footer__column">
+                    <a class="logo logo--footer" href="#intro">
+                        <img
+                            class="footer__icon"
+                            src="img/icons/white-logo.png"
+                            alt="Logo" />
+                        QUICKLINK
+                    </a>
+                    <div class="socials">
+                        <a class="socials__link" href="#" target="_blank">
+                            <img
+                                class="socials__icon"
+                                src="img/socials/facebook.png"
+                                alt="Facebook" />
+                        </a>
+                        <a class="socials__link" href="#" target="_blank">
+                            <img
+                                class="socials__icon"
+                                src="img/socials/twitter.png"
+                                alt="Twitter" />
+                        </a>
+                        <a class="socials__link" href="#" target="_blank">
+                            <img
+                                class="socials__icon"
+                                src="img/socials/instagram.png"
+                                alt="Instagram" />
+                        </a>
+                        <a class="socials__link" href="#" target="_blank">
+                            <img
+                                class="socials__icon"
+                                src="img/socials/youtube.png"
+                                alt="YouTube" />
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__column">
+                    <a class="footer__link" href="#">Что это?</a>
+                    <a class="footer__link" href="#">Как это работает?</a>
+                    <a class="footer__link" href="#">Сколько стоит?</a>
+                    <a class="footer__link" href="#">FAQ</a>
+                </div>
+                <div class="footer__column">
+                    <a class="footer__link" href="#">Перс. данные</a>
+                    <a class="footer__link" href="#">Безопасность</a>
+                    <a class="footer__link" href="#">Документы</a>
+                    <a class="footer__link" href="#">Политика отмены</a>
+                </div>
+                <div class="footer__column">
+                    <a class="footer__link" href="#">Поддержка</a>
+                    <a class="footer__link" href="#">Компания</a>
+                    <a class="footer__link" href="#">Вакансии</a>
+                    <a class="footer__link" href="#">Партнерам</a>
+                </div>
+            </div>
+        </footer>
+        <div class="container container--feedback">
+            <div class="feedback" data-modal="#modalFeedbackForm">
+                <div class="feedback__button">
+                    <img
+                        class="feedback__icon"
+                        src="img/icons/message.png"
+                        alt="Feedback" />
+                </div>
+            </div>
+        </div>
+        <div id="modalFeedbackForm" class="modal">
+            <div class="modal__dialog">
+                <div class="feedback__inner">
+                    <div class="feedback__preview">
+                        <img
+                            class="feedback__img"
+                            src="img/feedback.png"
+                            alt="Smile" />
+                    </div>
+                    <div class="feedback__content">
+                        <h2 class="feedback__title">Обратная связь</h2>
+                        <p class="feedback__text">
+                            Напиши свое сообщение, и мы постараемся дать ответ в
+                            самое ближайщее время
+                        </p>
+                        <div class="feedback__form">
+                            <form action="/" method="get">
+                                <div class="feedback-form__inner">
+                                    <label>
+                                        <input
+                                            class="button button--input"
+                                            name="name"
+                                            type="text"
+                                            placeholder="Ваше имя" />
+                                    </label>
+                                    <div class="feedback-select__inner">
+                                        <div
+                                            id="buttonSelect"
+                                            class="button button--select">
+                                            <span class="feedback-select__text"
+                                                >Тема обращения...</span
+                                            >
+                                            <img
+                                                id="buttonSelectIcon"
+                                                class="feedback-select__icon"
+                                                src="img/icons/down-arrow.png"
+                                                alt="Arrow" />
+                                            <div
+                                                id="feedbackOptions"
+                                                class="feedback__options">
+                                                <div class="feedback__option">
+                                                    Предложение
+                                                </div>
+                                                <div class="feedback__option">
+                                                    Проблема
+                                                </div>
+                                                <div class="feedback__option">
+                                                    Оплата
+                                                </div>
+                                                <div class="feedback__option">
+                                                    Другое
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <label>
+                                        <textarea
+                                            class="button button--input button--textarea"
+                                            name="message"
+                                            placeholder="Текст сообщения..."></textarea>
+                                    </label>
+                                </div>
+                                <button
+                                    class="button button--feedback button--feedback-form"
+                                    type="submit"
+                                    data-close
+                                    data-modal="#modalFeedbackSend">
+                                    <span class="feedback-button__text"
+                                        >Отправить</span
+                                    >
+                                    <svg class="feedback-button__icon">
+                                        <use xlink:href="#white-check"></use>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modalFeedbackSend" class="modal">
+            <div class="modal__dialog">
+                <div class="feedback__inner">
+                    <div class="feedback__preview">
+                        <img
+                            class="feedback__img"
+                            src="img/feedback.png"
+                            alt="Smile" />
+                    </div>
+                    <div class="feedback__content">
+                        <h2 class="feedback__title">
+                            Сообщение <br />
+                            отправлено!
+                        </h2>
+                        <p class="feedback__text">
+                            Мы уже начали готовить ответ
+                        </p>
+                        <button
+                            class="button button--feedback button--feedback-send"
+                            data-close>
+                            <span class="feedback-button__text"
+                                >Вернуться на главную</span
+                            >
+                            <svg class="feedback-button__icon">
+                                <use xlink:href="#white-check"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mask" class="mask"></div>
+        <script src="js/app.js"></script>
+    </body>
+</html>
